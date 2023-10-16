@@ -2,9 +2,9 @@ platform: Common
 buildPlatform:
 displayName: "Export Publish Artifacts"
 description: "Exports the specified publish artifacts to use in publish steps from the completed publish steps."
-webUrl: https://github.com/appcircleio/appcircle-export-build-artifacts
-repoUrl: https://github.com/appcircleio/appcircle-export-build-artifacts.git
-commit: 697c1ad
+webUrl: https://github.com/envergokmen/appcircle-export-publish-artifacts
+repoUrl: https://github.com/envergokmen/appcircle-export-publish-artifacts.git
+commit: aebe93a
 inputs:
 - key: "AC_UPLOAD_DIR"
   defaultValue: "$AC_OUTPUT_DIR"
