@@ -4,10 +4,10 @@ displayName: "Send an App version to Google PlayStore "
 description: "Select Appstore connect settings for the process"
 webUrl: 'https://github.com/appcircleio/appcircle-publish-send-to-playstore'
 repoUrl: 'https://github.com/appcircleio/appcircle-publish-send-to-playstore.git'
-commit: 215e842
+commit: c3ed84a
 inputs:
 - key: "AC_STORE_CREDENTIAL_ID"
-  defaultValue: ""
+  defaultValue: "Select"
   isRequired: true
   editorType: select
   title: Which Google Api connection will be used
