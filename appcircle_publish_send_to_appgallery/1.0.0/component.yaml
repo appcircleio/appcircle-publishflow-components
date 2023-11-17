@@ -4,7 +4,7 @@ displayName: "Send an App version to Huawei App Gallery "
 description: "Select a Huawei Api key for the process"
 webUrl: 'https://github.com/appcircleio/appcircle-publish-send-to-appgallery'
 repoUrl: 'https://github.com/appcircleio/appcircle-publish-send-to-appgallery.git'
-commit: 7925534
+commit: 635ebec
 inputs:
 - key: "AC_STORE_CREDENTIAL_ID"
   defaultValue: ""
@@ -19,6 +19,12 @@ inputs:
   isRequired: false
   title: Release notes for the Submission
   description: Filling that area may effect huawei submission process.
+  helpText:
+- key: "AC_HUAWEI_APP_ID"
+  editorType: input
+  isRequired: true
+  title: Huawei App Id can be found on AppGallery portal
+  description: Huawei requires Huawei App Id to send to AppGallery.
   helpText:
 processFilename: bash
 processArguments: '%AC_STEP_TEMP%/main.sh'
