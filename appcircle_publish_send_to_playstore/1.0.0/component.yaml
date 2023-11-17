@@ -4,7 +4,7 @@ displayName: "Send an App version to Google PlayStore "
 description: "Select Appstore connect settings for the process"
 webUrl: 'https://github.com/appcircleio/appcircle-publish-send-to-playstore'
 repoUrl: 'https://github.com/appcircleio/appcircle-publish-send-to-playstore.git'
-commit: bb7d76e
+commit: f61e963
 inputs:
 - key: "AC_STORE_CREDENTIAL_ID"
   defaultValue: ""
@@ -19,6 +19,14 @@ inputs:
   isRequired: false
   title: Release notes for the Submission
   description: Filling that area may effect playstore submission process.
+  helpText:
+- key: "AC_RELEASE_STATUS"
+  defaultValue: ""
+  isRequired: false
+  editorType: select
+  title: Fastlane Release Status
+  description: "Allow you to specify draft or completed status, first upload may require draft upload"
+  options: "completed,draft"
   helpText:
 processFilename: bash
 processArguments: '%AC_STEP_TEMP%/main.sh'
