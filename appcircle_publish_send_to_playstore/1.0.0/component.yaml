@@ -4,7 +4,7 @@ displayName: "Send an App version to Google PlayStore "
 description: "Select Appstore connect settings for the process"
 webUrl: 'https://github.com/appcircleio/appcircle-publish-send-to-playstore'
 repoUrl: 'https://github.com/appcircleio/appcircle-publish-send-to-playstore.git'
-commit: f61e963
+commit: 215e842
 inputs:
 - key: "AC_STORE_CREDENTIAL_ID"
   defaultValue: ""
