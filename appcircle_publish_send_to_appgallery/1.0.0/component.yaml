@@ -4,7 +4,7 @@ displayName: "Send an App version to Huawei App Gallery "
 description: "Select a Huawei Api key for the process"
 webUrl: 'https://github.com/appcircleio/appcircle-publish-send-to-appgallery'
 repoUrl: 'https://github.com/appcircleio/appcircle-publish-send-to-appgallery.git'
-commit: 635ebec
+commit: 4f51c26
 inputs:
 - key: "AC_STORE_CREDENTIAL_ID"
   defaultValue: ""
