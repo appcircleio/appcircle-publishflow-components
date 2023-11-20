@@ -1,10 +1,11 @@
 platform: Android
+marketPlace: "GooglePlayStore"
 buildPlatform:
 displayName: "Send an App version to Google PlayStore "
 description: "Select Appstore connect settings for the process"
 webUrl: 'https://github.com/appcircleio/appcircle-publish-send-to-playstore'
 repoUrl: 'https://github.com/appcircleio/appcircle-publish-send-to-playstore.git'
-commit: c3ed84a
+commit: 8df1067
 inputs:
 - key: "AC_STORE_CREDENTIAL_ID"
   defaultValue: "Select"
