@@ -5,7 +5,7 @@ displayName: "Send an App version to Appstore "
 description: "Select Appstore connect settings for the process"
 webUrl: https://github.com/appcircleio/appcircle-publish-send-to-appstore
 repoUrl: https://github.com/appcircleio/appcircle-publish-send-to-appstore.git
-commit: dcafddc
+commit: 3553f1c
 inputs:
 - key: "AC_XCODE_LIST_DIR"
   defaultValue: "$AC_XCODE_LIST_DIR"
