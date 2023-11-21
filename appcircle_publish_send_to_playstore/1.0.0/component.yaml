@@ -5,7 +5,7 @@ displayName: "Send an App version to Google PlayStore "
 description: "Select Appstore connect settings for the process"
 webUrl: 'https://github.com/appcircleio/appcircle-publish-send-to-playstore'
 repoUrl: 'https://github.com/appcircleio/appcircle-publish-send-to-playstore.git'
-commit: 8df1067
+commit: 2edb6a6
 inputs:
 - key: "AC_STORE_CREDENTIAL_ID"
   defaultValue: "Select"
@@ -14,6 +14,14 @@ inputs:
   title: Which Google Api connection will be used
   description: "Select a store credential, managed in Integrations."
   options: "ServerCallRequiredToGetValues"
+  helpText:
+- key: "AC_STACK_TYPE"
+  defaultValue: "Alpha"
+  isRequired: false
+  editorType: select
+  title: Stack type for submit
+  description: "Select a release track to which to send the binary. After the binary is uploaded, you can release it from the Google Play Console."
+  options: "Internal,Alpha,Beta,Production"
   helpText:
 - key: "AC_RELEASE_STATUS"
   defaultValue: ""
