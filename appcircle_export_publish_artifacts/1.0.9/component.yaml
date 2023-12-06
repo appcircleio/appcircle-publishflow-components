@@ -4,7 +4,7 @@ displayName: "Export Publish Artifacts"
 description: "Exports the specified publish artifacts to use in publish steps from the completed publish steps."
 webUrl: https://github.com/appcircleio/appcircle-export-publish-artifacts
 repoUrl: https://github.com/appcircleio/appcircle-export-publish-artifacts.git
-commit: 2590c55
+commit: 6b7505d
 inputs:
 - key: "AC_UPLOAD_DIR"
   defaultValue: "$AC_OUTPUT_DIR"
@@ -20,8 +20,8 @@ inputs:
   title: Delete artifacts for failed workflows
   description: "Delete build artifacts if any of your workflows failed. Only build logs will be uploaded."
   helpText:
-- key: "STEP_OUTPUT_VARIABLE"
-  defaultValue: "$STEP_OUTPUT_VARIABLE"
+- key: "AC_STEP_OUTPUT_VARIABLES"
+  defaultValue: "$AC_STEP_OUTPUT_VARIABLES"
   isRequired: false
   title: Comma seperated output values steps which will be exported
   description: ""
