@@ -1,53 +1,47 @@
 platform: iOS
 marketPlace: "AppleAppStore"
 buildPlatform:
-displayName: "Send an App version to Appstore "
-description: "Select Appstore connect settings for the process"
+displayName: "Send an App version to App Store"
+description: "Select App Store Connect settings for the process"
 webUrl: https://github.com/appcircleio/appcircle-publish-send-to-appstore
 repoUrl: https://github.com/appcircleio/appcircle-publish-send-to-appstore.git
-commit: b82c7dc
+commit: 36a793f
 inputs:
 - key: "AC_XCODE_LIST_DIR"
   defaultValue: "$AC_XCODE_LIST_DIR"
   isRequired: false
   title: Xcode List Directory
-  description: "Specifies the xcode folder list directory. Current xcode folder structure examples : /Applications/Xcode/10.3/Xcode or /Applications/Xcode/11.0/Xcode"
+  description: "Specifies the Xcode folder list directory. Current Xcode folder structure examples : /Applications/Xcode/10.3/Xcode or /Applications/Xcode/11.0/Xcode"
   helpText:
 - key: "AC_XCODE_VERSION"
-  defaultValue: "$AC_XCODE_VERSION"
+  defaultValue: "15.2.x"
+  editorType: select
+  options: "15.2.x,15.1.x,15.0.x,14.3.x,14.2.x,14.1.x,14.0.x,13.4.x,13.3.x,13.2.x,13.1.x,13.0.x"
   isRequired: true
   title: Xcode Version
-  description: Specifies the xcode version.
+  description: Specifies the Xcode version.
   helpText:
 - key: "AC_STACK_TYPE"
   defaultValue: "TestFlight"
   isRequired: false
   editorType: select
-  title: Stack type for submit
-  description: "Select an appstore connect channel."
+  title: Stage type for submit
+  description: "Select Release for App Store, TestFlight for Test Flight submissions."
   options: "TestFlight,Release"
   helpText:
 - key: "AC_STORE_CREDENTIAL_ID"
-  defaultValue: "Select"
-  isRequired: false
+  defaultValue: ""
+  isRequired: true
   editorType: select
-  title: Which Appstore api connection will be used
+  title: Select an App Store Connect API Key
   description: "Select a store credential, managed in Integrations."
   options: "ServerCallRequiredToGetValues"
-  helpText:
-- key: "AC_APPSTORE_API_KEY_TYPE"
-  defaultValue: ""
-  isRequired: false
-  editorType: select
-  title: Appstore Connect Api Type
-  description: "Select a store api type App Specific or Connect Api ?"
-  options: "AppStoreConnectApiConnection,ApplicationSpecificPasswordConnection"
   helpText:
 - key: "AC_RELEASE_NOTES"
   editorType: textarea
   isRequired: false
   title: Release notes for the Submission
-  description: Filling that area may effect appstore submission process.
+  description: Filling that area may effect App Store submission process.
   helpText:
 processFilename: bash
 processArguments: '%AC_STEP_TEMP%/main.sh'
