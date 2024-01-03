@@ -1,0 +1,19 @@
+platform: Common
+buildPlatform:
+displayName: "Send Approval Emails"
+description: "Email notification to send approval for the step"
+webUrl: https://github.com/appcircleio/appcircle-publish-email-send.git
+repoUrl: https://github.com/appcircleio/appcircle-publish-email-send.git.git
+runOn: "Server"
+commit: 9df954d
+inputs:
+- key: "AC_APPROVAL_EMAILS"
+  defaultValue: ""
+  isRequired: true
+  title: Email
+  description: "Enter an email address to send special Approve and Reject links"
+  helpText:
+processFilename: bash
+processArguments: '%AC_STEP_TEMP%/main.sh'
+files:
+- "main.sh"
