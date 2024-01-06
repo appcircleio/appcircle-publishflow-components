@@ -1,4 +1,5 @@
 platform: iOS
+hidden: true
 buildPlatform:
 displayName: "Xcode Select"
 description: "Use to specify xcode version."

@@ -1,4 +1,5 @@
 platform: Common
+hidden: true
 buildPlatform:
 displayName: "Export Publish Artifacts"
 description: "Exports the specified publish artifacts to use in publish steps from the completed publish steps."
