@@ -1,0 +1,19 @@
+platform: iOS
+buildPlatform:
+displayName: "Check App Store Release Status"
+description: "Checks statuses of the app on App Store and TestFlight"
+webUrl: https://github.com/appcircleio/appcircle-publish-appstore-status-check
+repoUrl: https://github.com/appcircleio/appcircle-publish-appstore-status-check.git
+runOn: "Server"
+commit: a96d0cf
+inputs:
+- key: "AC_SUCCES_STATUSES"
+  defaultValue: "READY_FOR_SALE,PENDING_DEVELOPER_RELEASE,PENDING_APPLE_REVIEW"
+  isRequired: true
+  title: Success Statuses
+  description: "you can customize acceptable/succeeded appstore statuses for your app"
+  helpText:
+processFilename: bash
+processArguments: '%AC_STEP_TEMP%/main.sh'
+files:
+- "main.sh"
