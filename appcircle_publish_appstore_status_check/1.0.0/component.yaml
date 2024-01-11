@@ -1,7 +1,7 @@
 platform: iOS
 buildPlatform:
 displayName: "Check App Store Release Status"
-description: "Checks statuses of the app on App Store and TestFlight"
+description: "Checks statuses of the app on App Store"
 webUrl: https://github.com/appcircleio/appcircle-publish-appstore-status-check
 repoUrl: https://github.com/appcircleio/appcircle-publish-appstore-status-check.git
 runOn: "Server"
