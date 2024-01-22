@@ -1,11 +1,11 @@
 platform: Android
 buildPlatform:
-displayName: "Get Approval from Google Play Console"
-description: "Checks app status on Tracks"
+displayName: "Get Approval from Google Play"
+description: "Get approval for the publish from Google Play"
 webUrl: https://github.com/appcircleio/appcircle-publish-googleplay-status-check
 repoUrl: https://github.com/appcircleio/appcircle-publish-googleplay-status-check.git
 runOn: "Server"
-commit: be6b5c7
+commit: 29cffe7
 inputs:
 - key: "AC_TRACK_TO_CHECK"
   editorType: select

@@ -2,10 +2,10 @@ platform: iOS
 marketPlace: "AppleAppStore"
 buildPlatform:
 displayName: "Send to TestFlight"
-description: "Select App Store Connect settings for the process"
+description: "Upload binary for TestFlight publishing"
 webUrl: https://github.com/appcircleio/appcircle-publish-send-to-testflight
 repoUrl: https://github.com/appcircleio/appcircle-publish-send-to-testflight.git
-commit: 5c6e9ae
+commit: 496db1f
 inputs:
 - key: "AC_XCODE_LIST_DIR"
   defaultValue: "$AC_XCODE_LIST_DIR"

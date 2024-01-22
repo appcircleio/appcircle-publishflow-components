@@ -2,10 +2,10 @@ platform: iOS
 marketPlace: "AppleAppStore"
 buildPlatform:
 displayName: "Send to App Store"
-description: "Select App Store Connect settings for the process"
+description: "Upload binary for App Store publishing"
 webUrl: https://github.com/appcircleio/appcircle-publish-send-to-appstore
 repoUrl: https://github.com/appcircleio/appcircle-publish-send-to-appstore.git
-commit: 250502e
+commit: 9bd3c47
 inputs:
 - key: "AC_XCODE_LIST_DIR"
   defaultValue: "$AC_XCODE_LIST_DIR"
