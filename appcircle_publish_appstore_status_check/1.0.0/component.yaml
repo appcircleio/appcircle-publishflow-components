@@ -5,6 +5,7 @@ description: "Checks statuses of the app on App Store"
 webUrl: https://github.com/appcircleio/appcircle-publish-appstore-status-check
 repoUrl: https://github.com/appcircleio/appcircle-publish-appstore-status-check.git
 runOn: "Server"
+scheduled: true
 commit: a96d0cf
 inputs:
 - key: "AC_SUCCES_STATUSES"
