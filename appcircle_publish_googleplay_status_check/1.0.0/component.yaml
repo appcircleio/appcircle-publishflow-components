@@ -6,6 +6,7 @@ webUrl: https://github.com/appcircleio/appcircle-publish-googleplay-status-check
 repoUrl: https://github.com/appcircleio/appcircle-publish-googleplay-status-check.git
 runOn: "Server"
 commit: 29cffe7
+scheduled: true
 inputs:
 - key: "AC_TRACK_TO_CHECK"
   editorType: select
