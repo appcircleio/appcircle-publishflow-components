@@ -1,0 +1,23 @@
+platform: iOS
+buildPlatform:
+displayName: "Get Approval from TestFlight"
+description: "Get approval for the publish from TestFlight"
+webUrl: https://github.com/appcircleio/appcircle-publish-testflight-status-check
+repoUrl: https://github.com/appcircleio/appcircle-publish-testflight-status-check.git
+runOn: "Server"
+scheduled: true
+commit: 98cf654
+inputs:
+- key: "AC_VALIDATION_CONDITION"
+  defaultValue: "OneOfExternalOrInternal"
+  editorType: select
+  options: "OneOfExternalOrInternal,ExternalOnly,InternalOnly,Both"
+  optionTitles: "One of the External or Internal,External Only,Internal Only,Both"
+  isRequired: false
+  title: Acceptance Condition
+  description: "TestFlight's internalBuildState and externalBuildState will be checked according the selection"
+  helpText:
+processFilename: bash
+processArguments: '%AC_STEP_TEMP%/main.sh'
+files:
+- "main.sh"
