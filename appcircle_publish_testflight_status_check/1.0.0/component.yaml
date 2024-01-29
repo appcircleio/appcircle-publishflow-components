@@ -1,4 +1,5 @@
 platform: iOS
+purpose: Publish
 buildPlatform:
 displayName: "Get Approval from TestFlight"
 description: "Get approval for the publish from TestFlight"
