@@ -1,4 +1,5 @@
 platform: Android
+purpose: Publish
 buildPlatform:
 displayName: "Get Approval from Google Play"
 description: "Get approval for the publish from Google Play"
