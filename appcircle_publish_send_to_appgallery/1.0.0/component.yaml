@@ -1,11 +1,12 @@
 platform: Android
+purpose: Publish
 marketPlace: "HuaweiAppGallery"
 buildPlatform:
 displayName: "Send to Huawei AppGallery "
 description: "Upload binary for AppGallery publishing"
 webUrl: 'https://github.com/appcircleio/appcircle-publish-send-to-appgallery'
 repoUrl: 'https://github.com/appcircleio/appcircle-publish-send-to-appgallery.git'
-commit: f5c1109
+commit: 201bcc5
 inputs:
 - key: "AC_STORE_CREDENTIAL_ID"
   defaultValue: "Select"
