@@ -1,4 +1,5 @@
 platform: Android
+purpose: Publish
 marketPlace: "HuaweiAppGallery"
 buildPlatform:
 displayName: "Send to Huawei AppGallery "
