@@ -1,4 +1,5 @@
 platform: Common
+purpose: Publish
 hidden: true
 buildPlatform:
 displayName: "Export Publish Artifacts"
