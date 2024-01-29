@@ -6,7 +6,7 @@ displayName: "Send to TestFlight"
 description: "Upload binary for TestFlight publishing"
 webUrl: https://github.com/appcircleio/appcircle-publish-send-to-testflight
 repoUrl: https://github.com/appcircleio/appcircle-publish-send-to-testflight.git
-commit: 496db1f
+commit: d26009e
 inputs:
 - key: "AC_XCODE_LIST_DIR"
   defaultValue: "$AC_XCODE_LIST_DIR"

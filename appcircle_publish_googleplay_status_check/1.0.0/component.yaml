@@ -6,7 +6,7 @@ description: "Get approval for the publish from Google Play"
 webUrl: https://github.com/appcircleio/appcircle-publish-googleplay-status-check
 repoUrl: https://github.com/appcircleio/appcircle-publish-googleplay-status-check.git
 runOn: "Server"
-commit: 29cffe7
+commit: d0c1a7b
 scheduled: true
 inputs:
 - key: "AC_TRACK_TO_CHECK"

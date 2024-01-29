@@ -6,7 +6,7 @@ description: "Email notification to send approval for the step"
 webUrl: https://github.com/appcircleio/appcircle-publish-email-send.git
 repoUrl: https://github.com/appcircleio/appcircle-publish-email-send.git.git
 runOn: "Server"
-commit: aafffc5
+commit: fdbc401
 inputs:
 - key: "AC_APPROVAL_EMAILS"
   defaultValue: ""

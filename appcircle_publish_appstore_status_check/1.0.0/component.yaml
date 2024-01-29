@@ -7,7 +7,7 @@ webUrl: https://github.com/appcircleio/appcircle-publish-appstore-status-check
 repoUrl: https://github.com/appcircleio/appcircle-publish-appstore-status-check.git
 runOn: "Server"
 scheduled: true
-commit: a96d0cf
+commit: e631bce
 inputs:
 - key: "AC_SUCCES_STATUSES"
   defaultValue: "READY_FOR_SALE,PENDING_DEVELOPER_RELEASE,PENDING_APPLE_REVIEW"

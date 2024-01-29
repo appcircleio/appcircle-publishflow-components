@@ -6,7 +6,7 @@ displayName: "Export Publish Artifacts"
 description: "Exports the specified publish artifacts to use in publish steps from the completed publish steps."
 webUrl: https://github.com/appcircleio/appcircle-export-publish-artifacts
 repoUrl: https://github.com/appcircleio/appcircle-export-publish-artifacts.git
-commit: 6b7505d
+commit: 177c37d
 inputs:
 - key: "AC_UPLOAD_DIR"
   defaultValue: "$AC_OUTPUT_DIR"
