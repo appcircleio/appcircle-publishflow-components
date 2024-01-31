@@ -1,4 +1,5 @@
 platform: iOS
+purpose: Publish
 buildPlatform:
 displayName: "Get Approval from TestFlight"
 description: "Get approval for the publish from TestFlight"
@@ -6,7 +7,7 @@ webUrl: https://github.com/appcircleio/appcircle-publish-testflight-status-check
 repoUrl: https://github.com/appcircleio/appcircle-publish-testflight-status-check.git
 runOn: "Server"
 scheduled: true
-commit: 98cf654
+commit: fe45fde
 inputs:
 - key: "AC_VALIDATION_CONDITION"
   defaultValue: "OneOfExternalOrInternal"
