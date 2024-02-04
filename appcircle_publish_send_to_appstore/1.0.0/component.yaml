@@ -6,7 +6,7 @@ displayName: "Send to App Store"
 description: "Upload binary for App Store publishing"
 webUrl: https://github.com/appcircleio/appcircle-publish-send-to-appstore
 repoUrl: https://github.com/appcircleio/appcircle-publish-send-to-appstore.git
-commit: c72abdf
+commit: 0464cce
 inputs:
 - key: "AC_XCODE_LIST_DIR"
   defaultValue: "$AC_XCODE_LIST_DIR"
@@ -21,14 +21,6 @@ inputs:
   isRequired: true
   title: Xcode Version
   description: Specifies the Xcode version.
-  helpText:
-- key: "AC_STORE_CREDENTIAL_ID"
-  defaultValue: ""
-  isRequired: true
-  editorType: select
-  title: Select an App Store Connect API Key
-  description: "Select a store credential, managed in Integrations."
-  options: "ServerCallRequiredToGetValues"
   helpText:
 - key: "AC_STACK_TYPE"
   defaultValue: "TestFlight"
