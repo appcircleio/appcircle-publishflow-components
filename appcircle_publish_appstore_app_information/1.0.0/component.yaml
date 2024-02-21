@@ -1,13 +1,13 @@
 platform: iOS
 purpose: Publish
-StructureType: CustomUI
+structureType: CustomUI
 runOn: "Server"
 buildPlatform:
 displayName: "Get App Info from App Store"
 description: "Gets package details from App Store"
 webUrl: https://github.com/appcircleio/appcircle-publish-appstore-app-information
 repoUrl: https://github.com/appcircleio/appcircle-publish-appstore-app-information.git
-commit: 6be8a77
+commit: 2cb572e
 processFilename: bash
 processArguments: '%AC_STEP_TEMP%/main.sh'
 files:
