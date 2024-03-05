@@ -1,0 +1,14 @@
+platform: Android
+purpose: Publish
+structureType: CustomUI
+runOn: "Server"
+buildPlatform:
+displayName: "App Information from Google Play Store"
+description: "Gets package details from Google Play Store"
+webUrl: https://github.com/appcircleio/appcircle-publish-playstore-app-information
+repoUrl: https://github.com/appcircleio/appcircle-publish-playstore-app-information.git
+commit: 9e160c7
+processFilename: bash
+processArguments: '%AC_STEP_TEMP%/main.sh'
+files:
+- "main.sh"
