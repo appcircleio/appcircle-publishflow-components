@@ -1,0 +1,39 @@
+platform: Common
+purpose: Publish
+hidden: true
+buildPlatform:
+displayName: "Export Publish Artifacts"
+description: "Exports the specified publish artifacts to use in publish steps from the completed publish steps."
+docsUrl: https://docs.appcircle.io/workflows/common-workflow-steps/export-build-artifacts/
+requiredComponents:
+precedingComponents: "appcircle_custom_script,appcircle_publish_googleplay_status_check,appcircle_publish_email_send,appcircle_publish_send_to_playstore,appcircle_publish_send_to_appgallery,appcircle_publish_appstore_app_information,appcircle_publish_appstore_status_check,appcircle_publish_testflight_status_check,appcircle_publish_send_to_appstore,appcircle_publish_send_to_testflight"
+followingComponents:
+webUrl: https://github.com/appcircleio/appcircle-export-publish-artifacts
+repoUrl: https://github.com/appcircleio/appcircle-export-publish-artifacts.git
+commit: 177c37d
+inputs:
+- key: "AC_UPLOAD_DIR"
+  defaultValue: "$AC_OUTPUT_DIR"
+  isRequired: true
+  title: Artifact Directory
+  description: ""
+  helpText:
+- key: "AC_DISABLE_UPLOAD_ON_FAIL"
+  defaultValue: "false"
+  isRequired: false
+  editorType: select
+  options: "false,true"
+  title: Delete artifacts for failed workflows
+  description: "Delete build artifacts if any of your workflows failed. Only build logs will be uploaded."
+  helpText:
+- key: "AC_STEP_OUTPUT_VARIABLES"
+  defaultValue: "$AC_STEP_OUTPUT_VARIABLES"
+  isRequired: false
+  title: Comma seperated output values steps which will be exported
+  description: ""
+  helpText:
+outputs:
+processFilename: ruby
+processArguments: '%AC_STEP_TEMP%/main.rb'
+files:
+- "main.rb"

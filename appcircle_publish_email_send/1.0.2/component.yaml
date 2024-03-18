@@ -1,0 +1,25 @@
+platform: Common
+purpose: Publish
+buildPlatform:
+displayName: "Get Approval via Email"
+description: "Email notification to send approval for the step"
+docsUrl: https://github.com/appcircleio/appcircle-publish-email-send
+requiredComponents:
+precedingComponents:
+followingComponents:
+webUrl: https://github.com/appcircleio/appcircle-publish-email-send
+repoUrl: https://github.com/appcircleio/appcircle-publish-email-send.git
+runOn: "Server"
+commit: 89891f9
+inputs:
+- key: "AC_APPROVAL_EMAILS"
+  defaultValue: ""
+  isRequired: true
+  title: Email
+  description: "Enter an email address to send special Approve and Reject links"
+  helpText:
+  validation: ^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$
+processFilename: bash
+processArguments: '%AC_STEP_TEMP%/main.sh'
+files:
+- "main.sh"
