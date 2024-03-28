@@ -1,0 +1,35 @@
+platform: iOS
+purpose: Publish
+marketPlace: "AppleAppStore"
+buildPlatform:
+displayName: "Send to TestFlight"
+description: "Upload binary for TestFlight publishing"
+webUrl: https://github.com/appcircleio/appcircle-publish-send-to-testflight
+repoUrl: https://github.com/appcircleio/appcircle-publish-send-to-testflight.git
+commit: 5ba29f1
+inputs:
+- key: "AC_XCODE_LIST_DIR"
+  defaultValue: "$AC_XCODE_LIST_DIR"
+  isRequired: false
+  title: Xcode List Directory
+  description: "Specifies the Xcode folder list directory. Current Xcode folder structure examples : /Applications/Xcode/10.3/Xcode or /Applications/Xcode/11.0/Xcode"
+  helpText:
+- key: "AC_XCODE_VERSION"
+  defaultValue: "15.2.x"
+  editorType: select
+  options: "15.2.x,15.1.x,15.0.x,14.3.x,14.2.x,14.1.x,14.0.x,13.4.x,13.3.x,13.2.x,13.1.x,13.0.x"
+  isRequired: true
+  title: Xcode Version
+  description: Specifies the Xcode version.
+  helpText:
+- key: "AC_RELEASE_NOTES"
+  defaultValue: "$AC_BUILD_RELEASE_NOTES"
+  editorType: textarea
+  isRequired: false
+  title: Text will be shown in what to test is TestFlight
+  description: Filling that area may effect App Store submission process.
+  helpText:
+processFilename: bash
+processArguments: '%AC_STEP_TEMP%/main.sh'
+files:
+- "main.sh"
