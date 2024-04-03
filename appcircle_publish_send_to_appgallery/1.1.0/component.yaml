@@ -6,9 +6,10 @@ displayName: "Send to Huawei AppGallery "
 description: "Upload binary for AppGallery publishing"
 webUrl: 'https://github.com/appcircleio/appcircle-publish-send-to-appgallery'
 repoUrl: 'https://github.com/appcircleio/appcircle-publish-send-to-appgallery.git'
-commit: 70fc5c5
+commit: 7e233b4
 inputs:
 - key: "AC_HUAWEI_APP_ID"
+  defaultValue: "$AC_HUAWEI_APP_ID"
   isRequired: true
   title: Huawei App Id
   description: Huawei requires Huawei App Id to send to AppGallery.

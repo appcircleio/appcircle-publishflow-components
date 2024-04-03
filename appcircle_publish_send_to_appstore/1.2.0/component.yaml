@@ -2,11 +2,11 @@ platform: iOS
 purpose: Publish
 marketPlace: "AppleAppStore"
 buildPlatform:
-displayName: "Send to TestFlight"
-description: "Upload binary for TestFlight publishing"
-webUrl: https://github.com/appcircleio/appcircle-publish-send-to-testflight
-repoUrl: https://github.com/appcircleio/appcircle-publish-send-to-testflight.git
-commit: 3038aaf
+displayName: "Send to App Store"
+description: "Upload binary for App Store publishing"
+webUrl: https://github.com/appcircleio/appcircle-publish-send-to-appstore
+repoUrl: https://github.com/appcircleio/appcircle-publish-send-to-appstore.git
+commit: 11e6ef4
 inputs:
 - key: "AC_XCODE_LIST_DIR"
   defaultValue: "$AC_XCODE_LIST_DIR"
@@ -22,11 +22,17 @@ inputs:
   title: Xcode Version
   description: Specifies the Xcode version.
   helpText:
+- key: "AC_STACK_TYPE"
+  defaultValue: "Release"
+  isRequired: false
+  editorType: select
+  title: Stage type for submit
+  description: "App Store or TestFlight stages."
+  options: "Release,TestFlight"
 - key: "AC_RELEASE_NOTES"
-  defaultValue: "$AC_BUILD_RELEASE_NOTES"
   editorType: textarea
   isRequired: false
-  title: Text will be shown in what to test is TestFlight
+  title: Release notes for the Submission
   description: Filling that area may effect App Store submission process.
   helpText:
 processFilename: bash
