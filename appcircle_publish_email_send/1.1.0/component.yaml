@@ -1,0 +1,32 @@
+platform: Common
+purpose: Publish
+buildPlatform:
+displayName: "Get Approval via Email"
+description: "Email notification to send approval for the step"
+webUrl: https://github.com/appcircleio/appcircle-publish-email-send.git
+repoUrl: https://github.com/appcircleio/appcircle-publish-email-send.git.git
+runOn: "Server"
+commit: dad68a9
+inputs:
+- key: "AC_APPROVAL_EMAILS"
+  defaultValue: ""
+  isRequired: false
+  title: All Required Approval Emails
+  description: "Enter required email addresses with comma to send special Approve and Reject links"
+  helpText: All email in that field must approve
+- key: "AC_OPTIONAL_APPROVAL_EMAILS"
+  defaultValue: ""
+  isRequired: false
+  title: Optional Emails to Approve
+  description: "Enter optional email addresses to send special Approve and Reject links"
+  helpText: Optional approval emails may need to approve if minumum number of approvals lower than required
+- key: "AC_MINIMUM_APPROVAL_COUNT"
+  defaultValue: "1"
+  isRequired: true
+  title: Minimum Required Approval Count
+  description: "All Required email plus optional email approvals must equal or greater to this"
+  helpText: Step will not be succeeded unless minium number of approvals full-filled
+processFilename: bash
+processArguments: '%AC_STEP_TEMP%/main.sh'
+files:
+- "main.sh"
