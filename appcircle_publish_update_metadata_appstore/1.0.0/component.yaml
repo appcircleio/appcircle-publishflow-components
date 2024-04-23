@@ -2,6 +2,7 @@ platform: iOS
 purpose: Publish
 marketPlace: "AppleAppStore"
 buildPlatform:
+structureType: CustomUI
 displayName: "Update meta-data on App Store"
 description: "Uploads metadata info, scrrenshots, videos or binary to App Store"
 webUrl: https://github.com/appcircleio/appcircle-publish-update-metadata-appstore
