@@ -7,7 +7,7 @@ displayName: "Update meta-data on App Store"
 description: "Uploads metadata info, scrrenshots, videos or binary to App Store"
 webUrl: https://github.com/appcircleio/appcircle-publish-update-metadata-appstore
 repoUrl: https://github.com/appcircleio/appcircle-publish-update-metadata-appstore.git
-commit: 4512ef9
+commit: 2f88ff8
 inputs:
 - key: "AC_XCODE_LIST_DIR"
   defaultValue: "$AC_XCODE_LIST_DIR"
