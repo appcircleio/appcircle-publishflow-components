@@ -12,7 +12,7 @@ inputs:
 - key: "AC_VALIDATION_CONDITION"
   defaultValue: "OneOfExternalOrInternal"
   editorType: select
-  options: "OneOfExternalOrInternal,ExternalOnly,InternalOnly,Both"
+  options: "OneOfExternalOrInternal,ExternalOnly,InternalOnly,Both,None"
   optionTitles: "One of the External or Internal,External Only,Internal Only,Both"
   isRequired: false
   title: Acceptance Condition
