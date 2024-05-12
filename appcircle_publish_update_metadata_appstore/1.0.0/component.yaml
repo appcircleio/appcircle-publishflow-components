@@ -3,11 +3,11 @@ purpose: Publish
 marketPlace: "AppleAppStore"
 buildPlatform:
 structureType: CustomUI
-displayName: "Update meta-data on App Store"
-description: "Uploads metadata info, scrrenshots, videos or binary to App Store"
+displayName: "Update Metadata on App Store Connect"
+description: "Uploads METADATA info, scrrenshots, videos or binary to App Store"
 webUrl: https://github.com/appcircleio/appcircle-publish-update-metadata-appstore
 repoUrl: https://github.com/appcircleio/appcircle-publish-update-metadata-appstore.git
-commit: aa7e3b3
+commit: aade07c
 inputs:
 - key: "AC_XCODE_LIST_DIR"
   defaultValue: "$AC_XCODE_LIST_DIR"
@@ -27,7 +27,7 @@ inputs:
   defaultValue: "true"
   isRequired: false
   editorType: select
-  title: Uploads screenshots while sending meta-data
+  title: Uploads screenshots while sending METADATA
   description: "Uploads screenshot files to App Store Connect for the related app version."
   options: "true,false"
   helpText:
@@ -35,8 +35,8 @@ inputs:
   defaultValue: "true"
   isRequired: false
   editorType: select
-  title: Update metada-info fields
-  description: "If disabled updating meta-data info will be ignored"
+  title: Update METADATA fields
+  description: "If disabled updating METADATA info will be ignored"
   options: "true,false"
   helpText:
 processFilename: bash
