@@ -8,13 +8,13 @@ webUrl: https://github.com/appcircleio/appcircle-publish-testflight-status-check
 repoUrl: https://github.com/appcircleio/appcircle-publish-testflight-status-check.git
 runOn: "Server"
 scheduled: true
-commit: fa8c7ee
+commit: 1c56dc3
 inputs:
 - key: "AC_VALIDATION_CONDITION"
   defaultValue: "OneOfExternalOrInternal"
   editorType: select
-  options: "OneOfExternalOrInternal,ExternalOnly,InternalOnly,Both"
-  optionTitles: "One of the External or Internal,External Only,Internal Only,Both"
+  options: "OneOfExternalOrInternal,ExternalOnly,InternalOnly,Both,None"
+  optionTitles: "One of the External or Internal,External Only,Internal Only,Both,None"
   isRequired: false
   title: Acceptance Condition
   description: "TestFlight's internalBuildState and externalBuildState will be checked according the selection"
