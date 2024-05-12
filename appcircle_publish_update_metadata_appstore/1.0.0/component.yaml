@@ -7,7 +7,7 @@ displayName: "Update Metadata on App Store Connect"
 description: "Uploads METADATA info, scrrenshots, videos or binary to App Store"
 webUrl: https://github.com/appcircleio/appcircle-publish-update-metadata-appstore
 repoUrl: https://github.com/appcircleio/appcircle-publish-update-metadata-appstore.git
-commit: aade07c
+commit: 4280cdd
 inputs:
 - key: "AC_XCODE_LIST_DIR"
   defaultValue: "$AC_XCODE_LIST_DIR"
@@ -35,9 +35,17 @@ inputs:
   defaultValue: "true"
   isRequired: false
   editorType: select
-  title: Update METADATA fields
+  title: Update METADATA info fields
   description: "If disabled updating METADATA info will be ignored"
   options: "true,false"
+  helpText:
+- key: "AC_CLEAR_SCREENSHOTS"
+  defaultValue: "false"
+  isRequired: false
+  editorType: select
+  title: Clear all previously uploaded screenshots
+  description: "If enabled all screenshots on App Store Connect will be removed before upload"
+  options: "false,true"
   helpText:
 processFilename: bash
 processArguments: '%AC_STEP_TEMP%/main.sh'
