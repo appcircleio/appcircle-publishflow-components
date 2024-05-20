@@ -4,8 +4,8 @@ marketPlace: "AppleAppStore"
 buildPlatform:
 displayName: "Send to Microsoft Intune Store"
 description: "Upload binary for Intune publishing"
-webUrl: https://github.com/appcircleio/appcircle-publish-send-to-intune-ios.git
-repoUrl: https://github.com/appcircleio/appcircle-publish-send-to-intune-ios.git.git
+webUrl: https://github.com/appcircleio/appcircle-publish-send-to-intune-ios
+repoUrl: https://github.com/appcircleio/appcircle-publish-send-to-intune-ios.git
 commit: 8ae0b10
 inputs:
 - key: "AC_INTUNE_AUTH_URL"
