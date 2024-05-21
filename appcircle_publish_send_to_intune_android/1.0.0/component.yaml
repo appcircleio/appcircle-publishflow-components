@@ -1,12 +1,12 @@
-platform: iOS
+platform: Android
 purpose: Publish
-marketPlace: "AppleAppStore"
+marketPlace: "GooglePlayStore"
 buildPlatform:
 displayName: "Send to Microsoft Intune"
 description: "Upload binary for Microsoft Intune publishing"
-webUrl: https://github.com/appcircleio/appcircle-publish-send-to-intune-ios
-repoUrl: https://github.com/appcircleio/appcircle-publish-send-to-intune-ios.git
-commit: 640e2fb
+webUrl: https://github.com/appcircleio/appcircle-publish-send-to-intune-android
+repoUrl: https://github.com/appcircleio/appcircle-publish-send-to-intune-android.git
+commit: e1d43ef
 inputs:
 - key: "AC_INTUNE_AUTH_URL"
   defaultValue: "$AC_INTUNE_AUTH_URL"
