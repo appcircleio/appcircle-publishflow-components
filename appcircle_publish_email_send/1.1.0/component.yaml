@@ -21,7 +21,7 @@ inputs:
   description: "Enter optional email addresses to send special Approve and Reject links"
   helpText: Optional approval emails may need to approve if minumum number of approvals lower than required
 - key: "AC_MINIMUM_APPROVAL_COUNT"
-  defaultValue: "1"
+  defaultValue: ""
   isRequired: true
   title: Minimum Required Approval Count
   description: "All Required email plus optional email approvals must equal or greater to this"
