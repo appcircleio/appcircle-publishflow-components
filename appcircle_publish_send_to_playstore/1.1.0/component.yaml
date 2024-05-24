@@ -6,7 +6,7 @@ displayName: "Send to Google Play"
 description: "Upload binary for Google Play publishing"
 webUrl: 'https://github.com/appcircleio/appcircle-publish-send-to-playstore'
 repoUrl: 'https://github.com/appcircleio/appcircle-publish-send-to-playstore.git'
-commit: 70c0fbf
+commit: 9dfde20
 inputs:
 - key: "AC_STACK_TYPE"
   defaultValue: "Alpha"
@@ -25,10 +25,11 @@ inputs:
   options: "completed,draft"
   helpText:
 - key: "AC_RELEASE_NOTES"
+  defaultValue: "$AC_RELEASE_NOTES"
   editorType: textarea
   isRequired: false
   title: Release notes for the Submission
-  description: Filling that area may effect playstore submission process.
+  description: Use special $AC_RELEASE_NOTES variable to send app version's current release note.
   helpText:
 processFilename: bash
 processArguments: '%AC_STEP_TEMP%/main.sh'
