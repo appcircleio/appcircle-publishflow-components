@@ -6,7 +6,7 @@ displayName: "Send to TestFlight"
 description: "Upload binary for TestFlight publishing"
 docsUrl: https://docs.appcircle.io/publish-integrations/ios-publish-integrations/sent-to-testflight
 requiredComponents: 
-precedingComponents: "appcircle_publish_appstore_app_information"
+precedingComponents: 
 followingComponents: 
 webUrl: https://github.com/appcircleio/appcircle-publish-send-to-testflight
 repoUrl: https://github.com/appcircleio/appcircle-publish-send-to-testflight.git

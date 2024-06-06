@@ -5,7 +5,7 @@ displayName: "Check App Store Release Status"
 description: "Checks statuses of the app on App Store"
 docsUrl: https://github.com/appcircleio/appcircle-publish-appstore-status-check
 requiredComponents: "appcircle_publish_send_to_appstore"
-precedingComponents: "appcircle_publish_appstore_app_information"
+precedingComponents: 
 followingComponents: 
 webUrl: https://github.com/appcircleio/appcircle-publish-appstore-status-check
 repoUrl: https://github.com/appcircleio/appcircle-publish-appstore-status-check.git
