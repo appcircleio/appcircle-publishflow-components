@@ -6,7 +6,7 @@ displayName: "Send to Microsoft Intune"
 description: "Upload binary for Microsoft Intune publishing"
 webUrl: https://github.com/appcircleio/appcircle-publish-send-to-intune-android
 repoUrl: https://github.com/appcircleio/appcircle-publish-send-to-intune-android.git
-commit: 0bb1231
+commit: d16e549
 inputs:
 - key: "AC_INTUNE_AUTH_URL"
   defaultValue: "$AC_INTUNE_AUTH_URL"
