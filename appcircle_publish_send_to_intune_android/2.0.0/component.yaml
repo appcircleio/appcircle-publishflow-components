@@ -1,0 +1,20 @@
+platform: Android
+purpose: Publish
+marketPlace: "GooglePlayStore"
+buildPlatform:
+displayName: "Send to Microsoft Intune"
+description: "Upload binary for Microsoft Intune publishing"
+webUrl: https://github.com/appcircleio/appcircle-publish-send-to-intune-android
+repoUrl: https://github.com/appcircleio/appcircle-publish-send-to-intune-android.git
+commit: 8849ff1
+inputs:
+- key: "AC_INTUNE_PUBLISHER_NAME"
+  defaultValue: "$AC_INTUNE_PUBLISHER_NAME"
+  isRequired: false
+  title: Intune Publisher Name
+  description: "Default will be the name of the organization."
+  helpText:
+processFilename: bash
+processArguments: '%AC_STEP_TEMP%/main.sh'
+files:
+- "main.sh"
