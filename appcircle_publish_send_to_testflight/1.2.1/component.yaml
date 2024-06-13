@@ -2,11 +2,15 @@ platform: iOS
 purpose: Publish
 marketPlace: "AppleAppStore"
 buildPlatform:
-displayName: "Send to App Store"
-description: "Upload binary for App Store publishing"
-webUrl: https://github.com/appcircleio/appcircle-publish-send-to-appstore
-repoUrl: https://github.com/appcircleio/appcircle-publish-send-to-appstore.git
-commit: 11e6ef4
+displayName: "Send to TestFlight"
+description: "Upload binary for TestFlight publishing"
+docsUrl: https://docs.appcircle.io/publish-integrations/ios-publish-integrations/sent-to-testflight
+requiredComponents: 
+precedingComponents: 
+followingComponents: 
+webUrl: https://github.com/appcircleio/appcircle-publish-send-to-testflight
+repoUrl: https://github.com/appcircleio/appcircle-publish-send-to-testflight.git
+commit: 2818cb4
 inputs:
 - key: "AC_XCODE_LIST_DIR"
   defaultValue: "$AC_XCODE_LIST_DIR"
@@ -22,18 +26,12 @@ inputs:
   title: Xcode Version
   description: Specifies the Xcode version.
   helpText:
-- key: "AC_STACK_TYPE"
-  defaultValue: "Release"
-  isRequired: false
-  editorType: select
-  title: Stage type for submit
-  description: "App Store or TestFlight stages."
-  options: "Release,TestFlight"
 - key: "AC_RELEASE_NOTES"
+  defaultValue: "$AC_RELEASE_NOTES"
   editorType: textarea
   isRequired: false
-  title: Release notes for the Submission
-  description: Filling that area may effect App Store submission process.
+  title: Text will be shown in what to test is TestFlight
+  description: Use special $AC_RELEASE_NOTES variable to send app version's current release note.
   helpText:
 processFilename: bash
 processArguments: '%AC_STEP_TEMP%/main.sh'
