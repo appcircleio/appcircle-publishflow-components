@@ -2,7 +2,6 @@ platform: Common
 purpose: Publish
 marketPlace: "MicrosoftIntune"
 buildPlatform:
-structureType: CustomUI
 runOn: "Server"
 displayName: "Update Metadata on Microsoft Intune"
 description: "Updates METADATA info on Microsoft Intune"
