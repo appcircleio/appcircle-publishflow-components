@@ -6,7 +6,7 @@ displayName: "Send to Microsoft Intune"
 description: "Upload binary for Microsoft Intune publishing"
 webUrl: https://github.com/appcircleio/appcircle-publish-send-to-intune-android
 repoUrl: https://github.com/appcircleio/appcircle-publish-send-to-intune-android.git
-commit: dd41e1d
+commit: 6f2634d
 inputs:
 - key: "AC_INTUNE_PUBLISHER_NAME"
   defaultValue: "$AC_INTUNE_PUBLISHER_NAME"
@@ -15,7 +15,7 @@ inputs:
   description: "Default will be the name of the organization."
   helpText:
 - key: "AC_INTUNE_TARGETED_PLATFORM"
-  defaultValue: "Both"
+  defaultValue: "androidOpenSourceProject"
   editorType: select
   optionTitles: "Android device administrator, Android (AOSP)"
   options: "androidDeviceAdministrator, androidOpenSourceProject"
