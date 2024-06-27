@@ -1,7 +1,7 @@
 platform: Common
 purpose: Publish
 buildPlatform:
-displayName: "Send to Enterprise Store"
+displayName: "Send to Enterprise App Store"
 description: "Sends binary to Enterprise Store Module"
 webUrl: https://github.com/appcircleio/appcircle-publish-send-to-enterprise-store
 repoUrl: https://github.com/appcircleio/appcircle-publish-send-to-enterprise-store.git
