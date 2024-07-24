@@ -10,7 +10,7 @@ precedingComponents:
 followingComponents: 
 webUrl: https://github.com/appcircleio/appcircle-publish-send-to-testflight
 repoUrl: https://github.com/appcircleio/appcircle-publish-send-to-testflight.git
-commit: 2818cb4
+commit: 458bf00
 inputs:
 - key: "AC_XCODE_LIST_DIR"
   defaultValue: "$AC_XCODE_LIST_DIR"
