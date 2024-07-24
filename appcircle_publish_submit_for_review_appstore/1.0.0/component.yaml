@@ -6,7 +6,7 @@ displayName: "Add for Review on App Store"
 description: "Submits the current app with existing metada and settings to App Store Review"
 webUrl: https://github.com/appcircleio/appcircle-publish-submit-for-review-appstore
 repoUrl: https://github.com/appcircleio/appcircle-publish-submit-for-review-appstore.git
-commit: fd08413
+commit: 47488be
 inputs:
 - key: "AC_XCODE_LIST_DIR"
   defaultValue: "$AC_XCODE_LIST_DIR"
