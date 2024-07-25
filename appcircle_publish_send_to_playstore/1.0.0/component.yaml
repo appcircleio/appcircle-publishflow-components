@@ -6,7 +6,7 @@ displayName: "Send to Google Play"
 description: "Upload binary for Google Play publishing"
 webUrl: 'https://github.com/appcircleio/appcircle-publish-send-to-playstore'
 repoUrl: 'https://github.com/appcircleio/appcircle-publish-send-to-playstore.git'
-commit: be09345
+commit: 62b197f
 inputs:
 - key: "AC_STORE_CREDENTIAL_ID"
   defaultValue: "Select"
