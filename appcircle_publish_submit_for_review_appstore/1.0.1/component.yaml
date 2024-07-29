@@ -10,7 +10,7 @@ precedingComponents: "appcircle_publish_send_to_testflight"
 followingComponents: 
 webUrl: https://github.com/appcircleio/appcircle-publish-submit-for-review-appstore
 repoUrl: https://github.com/appcircleio/appcircle-publish-submit-for-review-appstore.git
-commit: fd08413
+commit: 5871af2
 inputs:
 - key: "AC_XCODE_LIST_DIR"
   defaultValue: "$AC_XCODE_LIST_DIR"
