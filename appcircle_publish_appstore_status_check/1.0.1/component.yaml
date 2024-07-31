@@ -3,7 +3,7 @@ purpose: Publish
 buildPlatform:
 displayName: "Check App Store Release Status"
 description: "Checks statuses of the app on App Store"
-docsUrl: https://github.com/appcircleio/appcircle-publish-appstore-status-check
+docsUrl: https://docs.appcircle.io/publish-integrations/ios-publish-integrations/check-app-store-release-status
 requiredComponents: "appcircle_publish_send_to_appstore"
 precedingComponents: 
 followingComponents: 

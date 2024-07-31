@@ -4,7 +4,7 @@ marketPlace: "AppleAppStore"
 buildPlatform:
 displayName: "Add for Review on App Store"
 description: "Submits the current app with existing metada and settings to App Store Review"
-docsUrl: https://github.com/appcircleio/appcircle-publish-submit-for-review-appstore
+docsUrl: https://docs.appcircle.io/publish-integrations/ios-publish-integrations/add-for-review-on-app-store
 requiredComponents: 
 precedingComponents: "appcircle_publish_send_to_testflight"
 followingComponents: 
