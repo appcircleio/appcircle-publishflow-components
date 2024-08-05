@@ -8,6 +8,9 @@ description: "Updates METADATA info on Microsoft Intune"
 webUrl: https://github.com/appcircleio/appcircle-publish-update-metadata-intune
 repoUrl: https://github.com/appcircleio/appcircle-publish-update-metadata-intune.git
 docsUrl: https://docs.appcircle.io/publish-integrations/common-publish-integrations/update-metadata-on-microsoft-intune
+requiredComponents:
+precedingComponents: "appcircle_publish_send_to_intune_android,appcircle_publish_send_to_intune_ios"
+followingComponents:
 commit: eaacf6a
 processFilename: bash
 processArguments: '%AC_STEP_TEMP%/main.sh'

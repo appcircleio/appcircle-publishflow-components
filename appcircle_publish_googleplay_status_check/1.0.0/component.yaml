@@ -3,6 +3,10 @@ purpose: Publish
 buildPlatform:
 displayName: "Get Approval from Google Play"
 description: "Get approval for the publish from Google Play"
+docsUrl: https://docs.appcircle.io/publish-integrations/android-publish-integrations/get-approval-from-google-play
+requiredComponents:
+precedingComponents: "appcircle_publish_send_to_playstore"
+followingComponents:
 webUrl: https://github.com/appcircleio/appcircle-publish-googleplay-status-check
 repoUrl: https://github.com/appcircleio/appcircle-publish-googleplay-status-check.git
 runOn: "Server"
