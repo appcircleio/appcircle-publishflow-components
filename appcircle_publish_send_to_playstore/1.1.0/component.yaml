@@ -4,6 +4,10 @@ marketPlace: "GooglePlayStore"
 buildPlatform:
 displayName: "Send to Google Play"
 description: "Upload binary for Google Play publishing"
+docsUrl: https://docs.appcircle.io/publish-integrations/android-publish-integrations/publish-to-google-play
+requiredComponents:
+precedingComponents:
+followingComponents:
 webUrl: 'https://github.com/appcircleio/appcircle-publish-send-to-playstore'
 repoUrl: 'https://github.com/appcircleio/appcircle-publish-send-to-playstore.git'
 commit: 337b722
