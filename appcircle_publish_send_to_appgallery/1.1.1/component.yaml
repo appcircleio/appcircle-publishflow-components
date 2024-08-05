@@ -1,0 +1,30 @@
+platform: Android
+purpose: Publish
+marketPlace: "HuaweiAppGallery"
+buildPlatform:
+displayName: "Send to Huawei App Gallery"
+description: "Upload binary for App Gallery publishing"
+docsUrl: https://docs.appcircle.io/publish-integrations/android-publish-integrations/publish-to-huawei-appgallery
+requiredComponents:
+precedingComponents:
+followingComponents:
+webUrl: 'https://github.com/appcircleio/appcircle-publish-send-to-appgallery'
+repoUrl: 'https://github.com/appcircleio/appcircle-publish-send-to-appgallery.git'
+commit: b427317
+inputs:
+- key: "AC_HUAWEI_APP_ID"
+  defaultValue: "$AC_HUAWEI_APP_ID"
+  isRequired: true
+  title: Huawei App Id
+  description: Huawei requires Huawei App Id to send to App Gallery.
+  helpText:
+- key: "AC_RELEASE_NOTES"
+  editorType: textarea
+  isRequired: false
+  title: Release notes for the Submission
+  description: Filling that area may effect huawei submission process.
+  helpText:
+processFilename: bash
+processArguments: '%AC_STEP_TEMP%/main.sh'
+files:
+- "main.sh"
