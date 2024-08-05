@@ -11,7 +11,7 @@ precedingComponents:
 followingComponents: 
 webUrl: https://github.com/appcircleio/appcircle-publish-update-metadata-appstore
 repoUrl: https://github.com/appcircleio/appcircle-publish-update-metadata-appstore.git
-commit: 6c8c7e8
+commit: 8265449
 inputs:
 - key: "AC_XCODE_LIST_DIR"
   defaultValue: "$AC_XCODE_LIST_DIR"
