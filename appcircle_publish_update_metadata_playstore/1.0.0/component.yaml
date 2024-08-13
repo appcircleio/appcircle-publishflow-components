@@ -1,5 +1,5 @@
-platform: iOS
-purpose: Android
+platform: Android
+purpose: Publish
 marketPlace: "GooglePlayStore"
 buildPlatform:
 structureType: CustomUI
