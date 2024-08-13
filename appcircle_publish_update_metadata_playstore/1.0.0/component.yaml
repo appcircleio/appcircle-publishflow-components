@@ -7,7 +7,7 @@ displayName: "Update Metadata on Google Play Console"
 description: "Uploads METADATA info, screenshots or videos to Google Play"
 webUrl: https://github.com/appcircleio/appcircle-publish-update-metadata-playstore
 repoUrl: https://github.com/appcircleio/appcircle-publish-update-metadata-playstore.git
-commit: f83026a
+commit: 53e52c3
 processFilename: bash
 processArguments: '%AC_STEP_TEMP%/main.sh'
 inputs:
