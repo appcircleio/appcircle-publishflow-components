@@ -10,7 +10,7 @@ precedingComponents:
 followingComponents:
 webUrl: 'https://github.com/appcircleio/appcircle-publish-send-to-playstore'
 repoUrl: 'https://github.com/appcircleio/appcircle-publish-send-to-playstore.git'
-commit: 88b6a7e
+commit: 495d647
 processFilename: bash
 processArguments: '%AC_STEP_TEMP%/main.sh'
 files:
