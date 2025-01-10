@@ -10,7 +10,7 @@ precedingComponents:
 followingComponents:
 webUrl: 'https://github.com/appcircleio/appcircle-publish-send-to-appgallery'
 repoUrl: 'https://github.com/appcircleio/appcircle-publish-send-to-appgallery.git'
-commit: b427317
+commit: 511b337
 inputs:
 - key: "AC_HUAWEI_APP_ID"
   defaultValue: "$AC_HUAWEI_APP_ID"
