@@ -10,7 +10,7 @@ precedingComponents:
 followingComponents:
 webUrl: 'https://github.com/appcircleio/appcircle-publish-send-to-playstore'
 repoUrl: 'https://github.com/appcircleio/appcircle-publish-send-to-playstore.git'
-commit: aa08101
+commit: 73d10ee
 inputs:
 - key: "AC_STACK_TYPE"
   defaultValue: "Alpha"
