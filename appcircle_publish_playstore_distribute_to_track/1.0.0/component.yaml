@@ -14,7 +14,7 @@ repoUrl: https://github.com/appcircleio/appcircle-publish-playstore-distribute-t
 commit: cbd12b31bbec0092e0e7504d1002faeba8068c4d
 inputs:
 - key: "AC_STACK_TYPE"
-  defaultValue: "Select"
+  defaultValue: ""
   isRequired: true
   editorType: select
   title: Track type for submit
