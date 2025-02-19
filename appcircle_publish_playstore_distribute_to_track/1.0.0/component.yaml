@@ -3,15 +3,15 @@ purpose: Publish
 structureType: CustomUI
 runOn: "Server"
 buildPlatform:
-displayName: "Distribute to Track (BETA)"
-description: "Distributes the binary to the distribution track on Google Play"
+displayName: "Distribute to Track"
+description: "Distributes the binary to the distribution track on Google Play Console"
 marketPlace: "GooglePlayStore"
 precedingComponents: "appcircle_publish_send_to_playstore"
 processFilename: bash
 processArguments: '%AC_STEP_TEMP%/main.sh'
 webUrl: https://github.com/appcircleio/appcircle-publish-playstore-distribute-to-track
 repoUrl: https://github.com/appcircleio/appcircle-publish-playstore-distribute-to-track.git
-commit: 4e1e585d1f434b0006c1b77c7b92332faa0ed50b
+commit: c542e877c4a002b1a97548ed1e73122f533492e7
 inputs:
 - key: "AC_STACK_TYPE"
   defaultValue: "internal"
