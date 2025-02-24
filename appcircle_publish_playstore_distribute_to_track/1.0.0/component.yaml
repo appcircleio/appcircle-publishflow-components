@@ -11,7 +11,7 @@ processFilename: bash
 processArguments: '%AC_STEP_TEMP%/main.sh'
 webUrl: https://github.com/appcircleio/appcircle-publish-playstore-distribute-to-track
 repoUrl: https://github.com/appcircleio/appcircle-publish-playstore-distribute-to-track.git
-commit: c542e877c4a002b1a97548ed1e73122f533492e7
+commit: e48298bd46a7ec3c88035a7e35521020b95ddd2a
 inputs:
 - key: "AC_STACK_TYPE"
   defaultValue: "internal"
@@ -28,6 +28,14 @@ inputs:
   title: Play Store App Status
   description: "Allows you to specify draft, partial, or completed app statuses on the Google Play Console. The partial app status starts the app distribution at 10% by default, which can be adjusted later."
   options: "completed,draft,partial"
+  helpText:
+- key: "AC_AUTO_SEND_PLAYSTORE_REVIEW"
+  defaultValue: ""
+  isRequired: true
+  editorType: select
+  title: Auto send for review
+  description: "Select whether your changes should automatically go for review on the Google Play Console."
+  options: "ServerCallRequiredToGetValues"
   helpText:
 - key: "AC_RELEASE_NOTES"
   editorType: textarea
