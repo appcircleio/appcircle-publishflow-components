@@ -10,7 +10,7 @@ precedingComponents:
 followingComponents:
 webUrl: 'https://github.com/appcircleio/appcircle-publish-send-to-playstore'
 repoUrl: 'https://github.com/appcircleio/appcircle-publish-send-to-playstore.git'
-commit: b904d0d8b88ebed7da37f091613ebbd00b1acc26
+commit: 15c96b96560896f828c20b11e002a2724dab63a6
 inputs:
 - key: "AC_STACK_TYPE"
   defaultValue: "internal"
@@ -27,6 +27,14 @@ inputs:
   title: Play Store App Status
   description: "Allow you to specify draft or completed app statuses on Google Play console, first upload may require draft upload"
   options: "completed,draft"
+  helpText:
+- key: "AC_AUTO_SEND_PLAYSTORE_REVIEW"
+  defaultValue: ""
+  isRequired: true
+  editorType: select
+  title: Auto send for review
+  description: "Select whether your changes should automatically go for review on the Google Play Console."
+  options: "ServerCallRequiredToGetValues"
   helpText:
 - key: "AC_RELEASE_NOTES"
   defaultValue: "$AC_RELEASE_NOTES"
