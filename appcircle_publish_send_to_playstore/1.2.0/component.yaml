@@ -1,0 +1,49 @@
+platform: Android
+purpose: Publish
+marketPlace: "GooglePlayStore"
+buildPlatform:
+displayName: "Send to Google Play"
+description: "Upload binary for Google Play publishing"
+docsUrl: https://docs.appcircle.io/publish-integrations/android-publish-integrations/publish-to-google-play
+requiredComponents:
+precedingComponents:
+followingComponents:
+webUrl: 'https://github.com/appcircleio/appcircle-publish-send-to-playstore'
+repoUrl: 'https://github.com/appcircleio/appcircle-publish-send-to-playstore.git'
+commit: 15c96b96560896f828c20b11e002a2724dab63a6
+inputs:
+- key: "AC_STACK_TYPE"
+  defaultValue: "internal"
+  isRequired: true
+  editorType: select
+  title: Track type for submit
+  description: "Select a release track to which to send the binary. After the binary is uploaded, you can release it from the Google Play Console."
+  options: "ServerCallRequiredToGetValues"
+  helpText:
+- key: "AC_RELEASE_STATUS"
+  defaultValue: ""
+  isRequired: false
+  editorType: select
+  title: Play Store App Status
+  description: "Allow you to specify draft or completed app statuses on Google Play console, first upload may require draft upload"
+  options: "completed,draft"
+  helpText:
+- key: "AC_AUTO_SEND_PLAYSTORE_REVIEW"
+  defaultValue: ""
+  isRequired: true
+  editorType: select
+  title: Auto send for review
+  description: "Select whether your changes should automatically go for review on the Google Play Console."
+  options: "ServerCallRequiredToGetValues"
+  helpText:
+- key: "AC_RELEASE_NOTES"
+  defaultValue: "$AC_RELEASE_NOTES"
+  editorType: textarea
+  isRequired: false
+  title: Release notes for the Submission
+  description: Use special $AC_RELEASE_NOTES variable to send app version's current release note.
+  helpText:
+processFilename: bash
+processArguments: '%AC_STEP_TEMP%/main.sh'
+files:
+- "main.sh"

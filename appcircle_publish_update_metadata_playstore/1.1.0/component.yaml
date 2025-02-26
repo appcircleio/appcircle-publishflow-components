@@ -1,0 +1,47 @@
+platform: Android
+purpose: Publish
+marketPlace: "GooglePlayStore"
+buildPlatform:
+structureType: CustomUI
+displayName: "Update Metadata on Google Play Console"
+description: "Uploads METADATA info, screenshots or videos to Google Play"
+webUrl: https://github.com/appcircleio/appcircle-publish-update-metadata-playstore
+repoUrl: https://github.com/appcircleio/appcircle-publish-update-metadata-playstore.git
+commit: fe96b689511018e8ff80d61d71642d4b36d5a9e6
+processFilename: bash
+processArguments: '%AC_STEP_TEMP%/main.sh'
+inputs:
+- key: "AC_UPLOAD_SCREENSHOT_FILES"
+  defaultValue: "true"
+  isRequired: false
+  editorType: select
+  title: Uploads screenshots while sending METADATA
+  description: "Uploads screenshot files to Google Play Console."
+  options: "true,false"
+  helpText:
+- key: "AC_UPDATE_METADATA_INFO"
+  defaultValue: "true"
+  isRequired: false
+  editorType: select
+  title: Update METADATA fields
+  description: "If disabled updating METADATA info will be ignored"
+  options: "true,false"
+  helpText:
+- key: "AC_SYNC_IMAGE_UPLOAD"
+  defaultValue: "true"
+  isRequired: false
+  editorType: select
+  title: Synchronize image uploads with the Google Play Console
+  description: "If enabled, uploading existing images to the Play Console will be ignored."
+  options: "true,false"
+  helpText:
+- key: "AC_AUTO_SEND_PLAYSTORE_REVIEW"
+  defaultValue: ""
+  isRequired: true
+  editorType: select
+  title: Auto send for review
+  description: "Select whether your changes should automatically go for review on the Google Play Console."
+  options: "ServerCallRequiredToGetValues"
+  helpText:
+files:
+- "main.sh"

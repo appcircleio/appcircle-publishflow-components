@@ -1,0 +1,34 @@
+platform: Android
+purpose: Publish
+buildPlatform:
+displayName: "Get Approval from Google Play"
+description: "Get approval for the publish from Google Play"
+docsUrl: https://docs.appcircle.io/publish-integrations/android-publish-integrations/get-approval-from-google-play
+requiredComponents:
+precedingComponents: "appcircle_publish_send_to_playstore"
+followingComponents:
+webUrl: https://github.com/appcircleio/appcircle-publish-googleplay-status-check
+repoUrl: https://github.com/appcircleio/appcircle-publish-googleplay-status-check.git
+runOn: "Server"
+commit: d7113ba661952f6e5bc0ac3730bb9657a81f4264
+scheduled: true
+inputs:
+- key: "AC_TRACK_TO_CHECK"
+  editorType: select
+  defaultValue: "internal"
+  options: "ServerCallRequiredToGetValues"
+  isRequired: true
+  title: Select a Release Track to check app status
+  description: "Recommended to check Track that you've sent the app in previous steps"
+  helpText:
+- key: "AC_ACCEPTED_STATUSES"
+  defaultValue: "completed,inProgress"
+  isRequired: false
+  title: Customize statuses with comma if you want to accept as passed
+  description: "completed,inProgress,draft,halted statuses can be used"
+  helpText:
+processFilename: bash
+processArguments: '%AC_STEP_TEMP%/main.sh'
+files:
+- "main.sh"
+
