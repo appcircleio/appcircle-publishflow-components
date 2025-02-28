@@ -11,14 +11,14 @@ processFilename: bash
 processArguments: '%AC_STEP_TEMP%/main.sh'
 webUrl: https://github.com/appcircleio/appcircle-publish-playstore-distribute-to-track
 repoUrl: https://github.com/appcircleio/appcircle-publish-playstore-distribute-to-track.git
-commit: e48298bd46a7ec3c88035a7e35521020b95ddd2a
+commit: 2ae1a02298e34a2ffcbaf7a1fab84c359ea146e3
 inputs:
 - key: "AC_STACK_TYPE"
   defaultValue: "internal"
   isRequired: true
   editorType: select
   title: Track type for submit
-  description: "Select a release track to which to distribute the binary."
+  description: "Select a release track to which to distribute the binary. A valid Google API key is required to list tracks."
   options: "ServerCallRequiredToGetValues"
   helpText:
 - key: "AC_RELEASE_STATUS"

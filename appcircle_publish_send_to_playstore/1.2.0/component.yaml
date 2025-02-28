@@ -10,14 +10,14 @@ precedingComponents:
 followingComponents:
 webUrl: 'https://github.com/appcircleio/appcircle-publish-send-to-playstore'
 repoUrl: 'https://github.com/appcircleio/appcircle-publish-send-to-playstore.git'
-commit: 15c96b96560896f828c20b11e002a2724dab63a6
+commit: 51a95b6ebe1984e88167aa804ababc2ba59783c2
 inputs:
 - key: "AC_STACK_TYPE"
   defaultValue: "internal"
   isRequired: true
   editorType: select
   title: Track type for submit
-  description: "Select a release track to which to send the binary. After the binary is uploaded, you can release it from the Google Play Console."
+  description: "Select a release track to upload the binary. After uploading, release it from the Google Play Console. A valid Google API key is required to list tracks."
   options: "ServerCallRequiredToGetValues"
   helpText:
 - key: "AC_RELEASE_STATUS"
