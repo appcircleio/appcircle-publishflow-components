@@ -2,7 +2,7 @@ platform: Common
 purpose: Publish
 buildPlatform:
 displayName: "Metadata Approval"
-description: "Sends meta-data approval link to the specified email address"
+description: "Sends metadata approval link to the specified email address"
 webUrl: https://github.com/appcircleio/appcircle-publish-metadata-approve
 repoUrl: https://github.com/appcircleio/appcircle-publish-metadata-approve.git
 runOn: "Server"
