@@ -4,7 +4,7 @@ marketPlace: "GooglePlayStore"
 buildPlatform:
 structureType: CustomUI
 displayName: "Update Metadata on Google Play Console"
-description: "Uploads METADATA info, screenshots or videos to Google Play"
+description: "Uploads Metadata info, screenshots or videos to Google Play"
 webUrl: https://github.com/appcircleio/appcircle-publish-update-metadata-playstore
 repoUrl: https://github.com/appcircleio/appcircle-publish-update-metadata-playstore.git
 commit: fe96b689511018e8ff80d61d71642d4b36d5a9e6
@@ -15,7 +15,7 @@ inputs:
   defaultValue: "true"
   isRequired: false
   editorType: select
-  title: Uploads screenshots while sending METADATA
+  title: Uploads screenshots while sending Metadata
   description: "Uploads screenshot files to Google Play Console."
   options: "true,false"
   helpText:
@@ -23,8 +23,8 @@ inputs:
   defaultValue: "true"
   isRequired: false
   editorType: select
-  title: Update METADATA fields
-  description: "If disabled updating METADATA info will be ignored"
+  title: Update Metadata fields
+  description: "If disabled updating Metadata info will be ignored"
   options: "true,false"
   helpText:
 - key: "AC_SYNC_IMAGE_UPLOAD"

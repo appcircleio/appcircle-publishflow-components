@@ -4,7 +4,7 @@ marketPlace: "MicrosoftIntune"
 buildPlatform:
 runOn: "Server"
 displayName: "Update Metadata on Microsoft Intune"
-description: "Updates METADATA info on Microsoft Intune"
+description: "Updates Metadata info on Microsoft Intune"
 webUrl: https://github.com/appcircleio/appcircle-publish-update-metadata-intune
 repoUrl: https://github.com/appcircleio/appcircle-publish-update-metadata-intune.git
 docsUrl: https://docs.appcircle.io/publish-integrations/common-publish-integrations/update-metadata-on-microsoft-intune

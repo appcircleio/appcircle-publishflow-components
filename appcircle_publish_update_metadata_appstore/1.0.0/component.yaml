@@ -4,7 +4,7 @@ marketPlace: "AppleAppStore"
 buildPlatform:
 structureType: CustomUI
 displayName: "Update Metadata on App Store Connect"
-description: "Uploads METADATA info, scrrenshots, videos or binary to App Store"
+description: "Uploads Metadata info, screenshots, videos or binary to App Store"
 webUrl: https://github.com/appcircleio/appcircle-publish-update-metadata-appstore
 repoUrl: https://github.com/appcircleio/appcircle-publish-update-metadata-appstore.git
 commit: 30bbcc0
@@ -35,8 +35,8 @@ inputs:
   defaultValue: "true"
   isRequired: false
   editorType: select
-  title: Update METADATA info fields
-  description: "If disabled updating METADATA info will be ignored"
+  title: Update Metadata info fields
+  description: "If disabled updating Metadata info will be ignored"
   options: "true,false"
   helpText:
 - key: "AC_CLEAR_SCREENSHOTS"
