@@ -3,7 +3,7 @@ purpose: Publish
 buildPlatform:
 displayName: "Metadata Approval"
 description: "Sends Metadata approval link to the specified email address"
-docsUrl: https://docs.appcircle.io//publish-integrations/common-publish-integrations/metadata-approval
+docsUrl: https://docs.appcircle.io/publish-integrations/common-publish-integrations/metadata-approval
 requiredComponents:
 precedingComponents:  
 followingComponents: "appcircle_publish_update_metadata_appstore,appcircle_publish_update_metadata_intune,appcircle_publish_update_metadata_playstore"
