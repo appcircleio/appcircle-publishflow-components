@@ -5,6 +5,10 @@ buildPlatform:
 structureType: CustomUI
 displayName: "Update Metadata on Google Play Console"
 description: "Uploads Metadata info, screenshots or videos to Google Play"
+docsUrl: https://docs.appcircle.io/publish-module/publish-information/meta-data-information#android-metadata-information
+requiredComponents: 
+precedingComponents: "appcircle_publish_metadata_approve"
+followingComponents: 
 webUrl: https://github.com/appcircleio/appcircle-publish-update-metadata-playstore
 repoUrl: https://github.com/appcircleio/appcircle-publish-update-metadata-playstore.git
 commit: fe96b689511018e8ff80d61d71642d4b36d5a9e6
