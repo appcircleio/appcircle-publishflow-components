@@ -7,7 +7,7 @@ displayName: "Update Metadata on App Store Connect"
 description: "Uploads Metadata info, screenshots, videos or binary to App Store"
 docsUrl: https://docs.appcircle.io/publish-integrations/ios-publish-integrations/update-metadata-on-app-store-connect
 requiredComponents: 
-precedingComponents: 
+precedingComponents: "appcircle_publish_metadata_approve"
 followingComponents: 
 webUrl: https://github.com/appcircleio/appcircle-publish-update-metadata-appstore
 repoUrl: https://github.com/appcircleio/appcircle-publish-update-metadata-appstore.git

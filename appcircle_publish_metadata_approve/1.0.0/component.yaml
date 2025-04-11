@@ -3,6 +3,10 @@ purpose: Publish
 buildPlatform:
 displayName: "Metadata Approval"
 description: "Sends Metadata approval link to the specified email address"
+docsUrl: https://docs.appcircle.io/publish-integrations/common-publish-integrations/metadata-approval
+requiredComponents:
+precedingComponents:  
+followingComponents:
 webUrl: https://github.com/appcircleio/appcircle-publish-metadata-approve
 repoUrl: https://github.com/appcircleio/appcircle-publish-metadata-approve.git
 runOn: "Server"
