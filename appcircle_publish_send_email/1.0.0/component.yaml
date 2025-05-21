@@ -5,7 +5,7 @@ displayName: "Send Email"
 description: "Sends custom email with given settings"
 webUrl: https://github.com/appcircleio/appcircle-publish-send-email
 repoUrl: https://github.com/appcircleio/appcircle-publish-send-email.git
-commit: 7ee55df
+commit: ebbe772
 inputs:
 - key: "AC_EMAIL_HOST"
   defaultValue: "$AC_EMAIL_HOST"
