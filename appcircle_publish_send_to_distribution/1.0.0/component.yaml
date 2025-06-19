@@ -15,6 +15,7 @@ inputs:
 - key: "AC_DISTRIBUTION_PROFLE_ID"
   defaultValue: ""
   isRequired: true
+  editorType: select
   title: Distribution Profile ID
   description: "Select one of the profiles defined in Distribution Module"
   helpText:
