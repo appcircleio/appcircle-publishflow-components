@@ -10,7 +10,7 @@ followingComponents:
 webUrl: https://github.com/appcircleio/appcircle-publish-send-to-distribution
 repoUrl: https://github.com/appcircleio/appcircle-publish-send-to-distribution.git
 runOn: "Server"
-commit: abb56d6
+commit: 1798677
 inputs:
 - key: "AC_DISTRIBUTION_PROFLE_ID"
   defaultValue: ""
