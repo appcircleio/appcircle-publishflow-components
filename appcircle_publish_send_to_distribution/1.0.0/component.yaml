@@ -1,0 +1,24 @@
+platform: Common
+purpose: Publish
+buildPlatform:
+displayName: "Send to Distribution Module"
+description: "Sends binary to Distribution Module"
+docsUrl: https://docs.appcircle.io
+requiredComponents:
+precedingComponents:
+followingComponents:
+webUrl: https://github.com/appcircleio/appcircle-publish-send-to-distribution
+repoUrl: https://github.com/appcircleio/appcircle-publish-send-to-distribution.git
+runOn: "Server"
+commit: abb56d6
+inputs:
+- key: "AC_DISTRIBUTION_PROFLE_ID"
+  defaultValue: ""
+  isRequired: true
+  title: Distribution Profile ID
+  description: "Select one of the profiles defined in Distribution Module"
+  helpText:
+processFilename: bash
+processArguments: '%AC_STEP_TEMP%/main.sh'
+files:
+- "main.sh"
