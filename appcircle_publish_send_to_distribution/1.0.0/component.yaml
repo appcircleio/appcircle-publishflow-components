@@ -3,7 +3,7 @@ purpose: Publish
 buildPlatform:
 displayName: "Send to Testing Distribution"
 description: "Sends binary to Testing Distribution Module"
-docsUrl: https://docs.appcircle.io
+docsUrl: https://docs.appcircle.io/publish-integrations/common-publish-integrations/send-to-testing-distribution
 requiredComponents:
 precedingComponents:
 followingComponents:
