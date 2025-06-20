@@ -1,0 +1,25 @@
+platform: Common
+purpose: Publish
+buildPlatform:
+displayName: "Send to Testing Distribution"
+description: "Sends binary to Testing Distribution Module"
+docsUrl: https://docs.appcircle.io/publish-integrations/common-publish-integrations/send-to-testing-distribution
+requiredComponents:
+precedingComponents:
+followingComponents:
+webUrl: https://github.com/appcircleio/appcircle-publish-send-to-distribution
+repoUrl: https://github.com/appcircleio/appcircle-publish-send-to-distribution.git
+runOn: "Server"
+commit: dd6fb12
+inputs:
+- key: "AC_DISTRIBUTION_PROFILE_ID"
+  defaultValue: ""
+  isRequired: true
+  editorType: select
+  title: Testing Distribution Profile
+  description: "Select one of the profiles defined in Distribution Module"
+  helpText:
+processFilename: bash
+processArguments: '%AC_STEP_TEMP%/main.sh'
+files:
+- "main.sh"
