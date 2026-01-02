@@ -11,23 +11,17 @@ webUrl: https://github.com/appcircleio/appcircle-custom-script-from-git-componen
 repoUrl: https://github.com/appcircleio/appcircle-custom-script-from-git-component.git
 commit: 051a22a
 inputs:
-  - key: "AC_SCRIPT_FILENAME"
-    title: "Script File Name"
-    description: "Specifies the exact name of the script file to execute within the Git repository (e.g., `test.sh`, `code.rb` or `relative_path/python.py`)."
-    defaultValue: "$AC_SCRIPT_FILENAME"
-    isRequired: true
-    helpText: ""
-  - key: "AC_SCRIPT_REPO_DIR"
-    title: "Repository Directory"
-    description: "If the Git repository has already been cloned in a previous step of the same workflow, set the Repository Directory Output here. This input is required if `Git Clone URL` is not provided."
-    defaultValue: "$AC_SCRIPT_REPO_OUTPUT_DIR"
-    isRequired: false
-    helpText: ""
   - key: "AC_SCRIPT_REPO_CLONE_URL"
     title: "Git Repository Clone URL"
     description: "Git repository clone URL. Required if the Repository Directory Output is not provided. (e.g. https://exampleGit.exampleRepo.git)"
     defaultValue: "$AC_SCRIPT_REPO_CLONE_URL"
     isRequired: false
+    helpText: ""
+  - key: "AC_SCRIPT_FILENAME"
+    title: "Script File Path"
+    description: "Specifies the exact path of the script file to execute within the Git repository (e.g., `test.sh`, `code.rb` or `relative_path/python.py`)."
+    defaultValue: "$AC_SCRIPT_FILENAME"
+    isRequired: true
     helpText: ""
   - key: "AC_SCRIPT_GIT_USERNAME"
     title: "Username"
