@@ -1,4 +1,4 @@
-﻿platform: Common
+platform: Common
 purpose: Common
 buildPlatform:
 displayName: Custom Script from Git
