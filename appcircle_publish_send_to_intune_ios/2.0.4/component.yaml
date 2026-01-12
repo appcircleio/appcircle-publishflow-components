@@ -10,7 +10,7 @@ precedingComponents:
 followingComponents: 
 webUrl: https://github.com/appcircleio/appcircle-publish-send-to-intune-ios
 repoUrl: https://github.com/appcircleio/appcircle-publish-send-to-intune-ios.git
-commit: d32306d
+commit: c82142a
 inputs:
 - key: "AC_INTUNE_PUBLISHER_NAME"
   defaultValue: "$AC_INTUNE_PUBLISHER_NAME"
