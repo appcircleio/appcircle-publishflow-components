@@ -10,7 +10,7 @@ followingComponents:
 webUrl: https://github.com/appcircleio/appcircle-publish-metadata-approve
 repoUrl: https://github.com/appcircleio/appcircle-publish-metadata-approve.git
 runOn: "Server"
-commit: 1a2eeec
+commit: ecd10dc
 inputs:
 - key: "AC_APPROVAL_EMAILS"
   defaultValue: ""
