@@ -1,7 +1,7 @@
 platform: Common
 purpose: Publish
 buildPlatform:
-displayName: "Metadata Approval"
+displayName: "Metadata Approval via Email"
 description: "Sends Metadata approval link to the specified email address"
 docsUrl: https://docs.appcircle.io/publish-integrations/common-publish-integrations/metadata-approval
 requiredComponents:
@@ -10,7 +10,7 @@ followingComponents:
 webUrl: https://github.com/appcircleio/appcircle-publish-metadata-approve
 repoUrl: https://github.com/appcircleio/appcircle-publish-metadata-approve.git
 runOn: "Server"
-commit: 1a2eeec
+commit: 0c75ff6
 inputs:
 - key: "AC_APPROVAL_EMAILS"
   defaultValue: ""
