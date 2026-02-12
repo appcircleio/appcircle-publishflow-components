@@ -1,0 +1,39 @@
+platform: iOS
+purpose: Publish
+marketPlace: "AppleAppStore"
+buildPlatform:
+displayName: "Send to TestFlight"
+description: "Upload binary for TestFlight publishing"
+docsUrl: https://docs.appcircle.io/publish-integrations/ios-publish-integrations/sent-to-testflight
+requiredComponents: 
+precedingComponents: 
+followingComponents: 
+webUrl: https://github.com/appcircleio/appcircle-publish-send-to-testflight
+repoUrl: https://github.com/appcircleio/appcircle-publish-send-to-testflight.git
+commit: ce2428d331bb9f218c41fa5811e08e191b1c47b0
+inputs:
+- key: "AC_XCODE_LIST_DIR"
+  defaultValue: "$AC_XCODE_LIST_DIR"
+  isRequired: false
+  title: Xcode List Directory
+  description: "Specifies the Xcode folder list directory. Current Xcode folder structure examples : /Applications/Xcode/10.3/Xcode or /Applications/Xcode/11.0/Xcode"
+  helpText:
+- key: "AC_XCODE_VERSION"
+  defaultValue: "16.2.x"
+  editorType: select
+  options: "26.0.x,16.4.x,16.3.x,16.2.x,16.1.x,16.0.x,15.4.x,15.3.x,15.2.x,15.1.x,15.0.x,14.3.x"
+  isRequired: true
+  title: Xcode Version
+  description: Specifies the Xcode version.
+  helpText:
+- key: "AC_RELEASE_NOTES"
+  defaultValue: "$AC_RELEASE_NOTES"
+  editorType: textarea
+  isRequired: false
+  title: Text will be shown in what to test is TestFlight
+  description: Use special $AC_RELEASE_NOTES variable to send app version's current release note.
+  helpText:
+processFilename: bash
+processArguments: '%AC_STEP_TEMP%/main.sh'
+files:
+- "main.sh"
