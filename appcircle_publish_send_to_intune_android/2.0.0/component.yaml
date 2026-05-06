@@ -10,7 +10,7 @@ docsUrl: https://docs.appcircle.io/publish-integrations/common-publish-integrati
 requiredComponents:
 precedingComponents:
 followingComponents:
-commit: 862aaca
+commit: da9cae481fbf74a9a14d8942a5de59cd095dc102
 inputs:
 - key: "AC_INTUNE_PUBLISHER_NAME"
   defaultValue: "$AC_INTUNE_PUBLISHER_NAME"
