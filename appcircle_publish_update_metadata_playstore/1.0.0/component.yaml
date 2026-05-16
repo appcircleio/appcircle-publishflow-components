@@ -4,7 +4,7 @@ marketPlace: "GooglePlayStore"
 buildPlatform:
 structureType: CustomUI
 displayName: "Update Metadata on Google Play Console"
-description: "Uploads Metadata info, screenshots or videos to Google Play"
+description: "Uploads Metadata, screenshots or videos to Google Play Console"
 webUrl: https://github.com/appcircleio/appcircle-publish-update-metadata-playstore
 repoUrl: https://github.com/appcircleio/appcircle-publish-update-metadata-playstore.git
 commit: 53e52c3
@@ -31,8 +31,8 @@ inputs:
   defaultValue: "true"
   isRequired: false
   editorType: select
-  title: Synchronize image uploads with the Google Play Console
-  description: "If enabled, uploading existing images to the Play Console will be ignored."
+  title: Synchronize image uploads with Google Play Console
+  description: "If enabled, uploading existing images to Google Play Console will be ignored."
   options: "true,false"
   helpText:
 files:

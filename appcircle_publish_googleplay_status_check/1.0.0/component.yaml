@@ -1,8 +1,8 @@
 platform: Android
 purpose: Publish
 buildPlatform:
-displayName: "Get Approval from Google Play"
-description: "Get approval for the publish from Google Play"
+displayName: "Get Approval from Google Play Console"
+description: "Get approval for the publish from Google Play Console"
 docsUrl: https://docs.appcircle.io/publish-integrations/android-publish-integrations/get-approval-from-google-play
 requiredComponents:
 precedingComponents: "appcircle_publish_send_to_playstore"

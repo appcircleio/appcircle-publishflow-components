@@ -2,8 +2,8 @@ platform: Android
 purpose: Publish
 marketPlace: "GooglePlayStore"
 buildPlatform:
-displayName: "Send to Google Play"
-description: "Upload binary for Google Play publishing"
+displayName: "Send to GGoogle Play Console"
+description: "Upload binary for Google Play Console publishing"
 docsUrl: https://docs.appcircle.io/publish-integrations/android-publish-integrations/publish-to-google-play
 requiredComponents:
 precedingComponents:
