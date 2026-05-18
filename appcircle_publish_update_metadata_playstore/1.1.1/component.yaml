@@ -4,7 +4,7 @@ marketPlace: "GooglePlayStore"
 buildPlatform:
 structureType: CustomUI
 displayName: "Update Metadata on Google Play Console"
-description: "Uploads Metadata info, screenshots or videos to Google Play"
+description: "Uploads Metadata, screenshots or videos to Google Play Console"
 docsUrl: https://docs.appcircle.io/publish-module/publish-information/meta-data-information#android-metadata-information
 requiredComponents: 
 precedingComponents: "appcircle_publish_metadata_approve"
@@ -36,7 +36,7 @@ inputs:
   isRequired: false
   editorType: select
   title: Synchronize image uploads with the Google Play Console
-  description: "If enabled, uploading existing images to the Play Console will be ignored."
+  description: "If enabled, uploading existing images to Google Play Console will be ignored."
   options: "true,false"
   helpText:
 - key: "AC_AUTO_SEND_PLAYSTORE_REVIEW"
@@ -44,7 +44,7 @@ inputs:
   isRequired: true
   editorType: select
   title: Auto send for review
-  description: "Select whether your changes should automatically go for review on the Google Play Console."
+  description: "Select whether your changes should automatically go for review on Google Play Console."
   options: "ServerCallRequiredToGetValues"
   helpText:
 files:

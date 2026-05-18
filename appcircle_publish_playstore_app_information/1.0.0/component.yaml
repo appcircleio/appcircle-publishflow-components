@@ -3,8 +3,8 @@ purpose: Publish
 structureType: CustomUI
 runOn: "Server"
 buildPlatform:
-displayName: "App Information from Google Play Store"
-description: "Gets package details from Google Play Store"
+displayName: "App Information from Google Play Console"
+description: "Gets package details from Google Play Console"
 docsUrl: https://docs.appcircle.io/publish-integrations/android-publish-integrations/app-information-from-google-play
 requiredComponents:
 precedingComponents: "appcircle_publish_send_to_playstore" 

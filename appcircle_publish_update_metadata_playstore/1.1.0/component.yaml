@@ -35,8 +35,8 @@ inputs:
   defaultValue: "true"
   isRequired: false
   editorType: select
-  title: Synchronize image uploads with the Google Play Console
-  description: "If enabled, uploading existing images to the Play Console will be ignored."
+  title: Synchronize image uploads with Google Play Console
+  description: "If enabled, uploading existing images to Google Play Console will be ignored."
   options: "true,false"
   helpText:
 - key: "AC_AUTO_SEND_PLAYSTORE_REVIEW"
@@ -44,7 +44,7 @@ inputs:
   isRequired: true
   editorType: select
   title: Auto send for review
-  description: "Select whether your changes should automatically go for review on the Google Play Console."
+  description: "Select whether your changes should automatically go for review on Google Play Console."
   options: "ServerCallRequiredToGetValues"
   helpText:
 files:
