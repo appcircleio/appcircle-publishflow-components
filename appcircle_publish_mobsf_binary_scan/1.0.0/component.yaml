@@ -5,7 +5,7 @@ displayName: "MobSF Binary Scan"
 description: "Scans the app being published for security issues"
 webUrl: https://github.com/appcircleio/appcircle-publish-mobsf-binary-scan
 repoUrl: https://github.com/appcircleio/appcircle-publish-mobsf-binary-scan.git
-commit: a9ad31e
+commit: 0c989b4
 inputs:
 - key: "AC_MOBSF_FAIL_ON"
   defaultValue: "critical"
