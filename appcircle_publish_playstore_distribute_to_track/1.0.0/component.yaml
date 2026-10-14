@@ -1,4 +1,5 @@
 platform: Android
+airgapSupport: false
 purpose: Publish
 structureType: CustomUI
 runOn: "Server"

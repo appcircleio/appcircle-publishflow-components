@@ -1,4 +1,5 @@
 platform: Common
+airgapSupport: true
 purpose: Publish
 buildPlatform:
 displayName: "Send to Testing Distribution"
