@@ -1,5 +1,4 @@
 platform: iOS
-airgapSupport: false
 purpose: Publish
 buildPlatform:
 displayName: "Get Approval from TestFlight"

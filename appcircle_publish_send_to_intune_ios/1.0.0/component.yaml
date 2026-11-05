@@ -1,5 +1,4 @@
 platform: iOS
-airgapSupport: false
 purpose: Publish
 marketPlace: "AppleAppStore"
 buildPlatform:

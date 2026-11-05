@@ -1,5 +1,4 @@
 platform: Android
-airgapSupport: false
 purpose: Publish
 marketPlace: "HuaweiAppGallery"
 buildPlatform:
