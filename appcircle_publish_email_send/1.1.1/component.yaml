@@ -1,5 +1,4 @@
 platform: Common
-airgapSupport: true
 purpose: Publish
 buildPlatform:
 displayName: "Get Approval via Email"

@@ -1,5 +1,4 @@
 platform: Common
-airgapSupport: true
 purpose: Common
 buildPlatform:
 displayName: Custom Script from Git

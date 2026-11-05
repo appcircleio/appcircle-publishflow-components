@@ -1,5 +1,4 @@
 platform: Android
-airgapSupport: false
 purpose: Publish
 buildPlatform:
 displayName: "Get Approval from Google Play Console"

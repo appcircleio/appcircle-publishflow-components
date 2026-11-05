@@ -1,5 +1,4 @@
 platform: iOS
-airgapSupport: true
 purpose: Common
 hidden: true
 buildPlatform:
