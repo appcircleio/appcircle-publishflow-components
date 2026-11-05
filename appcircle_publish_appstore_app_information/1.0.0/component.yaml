@@ -1,5 +1,4 @@
 platform: iOS
-airgapSupport: false
 purpose: Publish
 structureType: CustomUI
 runOn: "Server"

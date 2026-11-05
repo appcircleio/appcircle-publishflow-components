@@ -1,5 +1,4 @@
 platform: Common
-airgapSupport: false
 purpose: Publish
 marketPlace: "MicrosoftIntune"
 buildPlatform:
