@@ -9,7 +9,7 @@ precedingComponents:
 followingComponents:
 webUrl: https://github.com/appcircleio/appcircle-publish-network-check
 repoUrl: https://github.com/appcircleio/appcircle-publish-network-check.git
-commit: 57bbefd
+commit: 543ace9
 inputs:
   - key: "AC_CHECK_NETWORK_API_APPSTORECONNECT_APPLE_COM"
     title: "Check App Store Connect API Access"
