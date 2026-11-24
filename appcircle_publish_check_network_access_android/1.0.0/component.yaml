@@ -9,7 +9,7 @@ precedingComponents:
 followingComponents:
 webUrl: https://github.com/appcircleio/appcircle-publish-network-check
 repoUrl: https://github.com/appcircleio/appcircle-publish-network-check.git
-commit: 543ace9
+commit: ca9b789
 inputs:
   - key: "AC_CHECK_NETWORK_WWW_GOOGLEAPIS_COM"
     title: "Check Google APIs Access"
