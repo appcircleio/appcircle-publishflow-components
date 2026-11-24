@@ -1,0 +1,80 @@
+platform: iOS
+purpose: Publish
+buildPlatform:
+displayName: "Check Network Access"
+description: "Checks runner access to the App Store endpoints used by the Appcircle publish module."
+docsUrl: https://docs.appcircle.io/publish-integrations/common-publish-integrations/check-network-access
+requiredComponents:
+precedingComponents:
+followingComponents:
+webUrl: https://github.com/appcircleio/appcircle-publish-network-check
+repoUrl: https://github.com/appcircleio/appcircle-publish-network-check.git
+commit: ca9b789
+inputs:
+  - key: "AC_CHECK_NETWORK_API_APPSTORECONNECT_APPLE_COM"
+    title: "Check App Store Connect API Access"
+    description: "Checks if the runner can access `https://api.appstoreconnect.apple.com/` when enabled."
+    defaultValue: "true"
+    isRequired: false
+    editorType: "select"
+    options: "true,false"
+    helpText: ""
+  - key: "AC_CHECK_NETWORK_APPSTORECONNECT_APPLE_COM"
+    title: "Check App Store Connect Access"
+    description: "Checks if the runner can access `https://appstoreconnect.apple.com/` when enabled."
+    defaultValue: "true"
+    isRequired: false
+    editorType: "select"
+    options: "true,false"
+    helpText: ""
+  - key: "AC_CHECK_NETWORK_CONTENTDELIVERY_ITUNES_APPLE_COM"
+    title: "Check iTunes Content Delivery Access"
+    description: "Checks if the runner can access `https://contentdelivery.itunes.apple.com/` when enabled."
+    defaultValue: "true"
+    isRequired: false
+    editorType: "select"
+    options: "true,false"
+    helpText: ""
+  - key: "AC_CHECK_NETWORK_NORTHAMERICA_1_OBJECT_STORAGE_APPLE_COM"
+    title: "Check Apple Object Storage Access"
+    description: "Checks if the runner can access `https://northamerica-1.object-storage.apple.com/` when enabled."
+    defaultValue: "true"
+    isRequired: false
+    editorType: "select"
+    options: "true,false"
+    helpText: ""
+  - key: "AC_CHECK_NETWORK_API_ENTERPRISE_DEVELOPER_APPLE_COM"
+    title: "Check Apple Enterprise API Access"
+    description: "Checks if the runner can access `https://api.enterprise.developer.apple.com/` when enabled. Enable it only when using an Apple Enterprise API key."
+    defaultValue: "false"
+    isRequired: false
+    editorType: "select"
+    options: "true,false"
+    helpText: ""
+  - key: "AC_CHECK_CONNECTION_TIMEOUT"
+    title: "Set Connection Timeout"
+    description: "Specifies the maximum time (integer, in seconds) allowed for establishing a connection to the server before the request is aborted."
+    defaultValue: "8"
+    isRequired: false
+    helpText: ""
+  - key: "AC_CHECK_CONNECTION_MAX_TIMEOUT"
+    title: "Set Max Timeout"
+    description: "Specifies the maximum total time (integer, in seconds) allowed for the entire request (including connection, data transfer, and response) before it is aborted."
+    defaultValue: "20"
+    isRequired: false
+    helpText: ""
+  - key: "AC_CHECK_NETWORK_EXTRA_URL_PARAMETERS"
+    title: "Additional URL parameters"
+    description: "Additional URL parameters to check network access (comma \",\" separated ; e.g. `https://URL1, https://URL2`)."
+    defaultValue: "$AC_CHECK_NETWORK_EXTRA_URL_PARAMETERS"
+    isRequired: false
+    helpText: ""
+outputs:
+processFilename: ruby
+processArguments: '%AC_STEP_TEMP%/main.rb'
+files:
+  - "main.rb"
+  - "config.rb"
+  - "checker.rb"
+  - "report.rb"
+  - "curl_exit_codes.rb"
